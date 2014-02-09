@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>61C35717-8695-4EB0-800F-9CC80A279E49</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TKContactPicker</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6410D997-8990-4871-B09B-CE4FB496A7CF</key>
+		<string>https://github.com/qnibus/TKContactsMultiPicker.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TKContactPicker.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6410D997-8990-4871-B09B-CE4FB496A7CF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/qnibus/TKContactsMultiPicker.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6410D997-8990-4871-B09B-CE4FB496A7CF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6410D997-8990-4871-B09B-CE4FB496A7CF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TKContactsMultiPicker</string>
+		</dict>
+	</array>
+</dict>
+</plist>
