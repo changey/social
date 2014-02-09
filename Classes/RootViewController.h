@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Signup2ViewController.h"
 //#import "MerchantViewController.h"
-//#import "Signup2ViewController.h"
 //#import "MerDiscountsViewController.h"
 //#import "FbGraph.h"
 //#import "MenuViewController.h"
@@ -17,7 +17,7 @@
 
 
 //@class MerchantViewController;
-//@class Signup2ViewController;
+@class Signup2ViewController;
 //@class MerDiscountsViewController;
 //@class ASIHTTPRequest;
 //@class MenuViewController;
@@ -43,7 +43,7 @@
 //    int photoCount;
 //    
 //    MerchantViewController *viewmer;
-//    Signup2ViewController *viewsign;
+    Signup2ViewController *viewsign;
     
 //    
     IBOutlet UITextField *user;
@@ -89,7 +89,7 @@
 //@property(nonatomic, retain) NSString *merchant_id;
 //
 //@property(nonatomic, retain) MerchantViewController *viewmer;
-//@property(nonatomic, retain) Signup2ViewController *viewsign;
+@property(nonatomic, retain) Signup2ViewController *viewsign;
 
 @property (nonatomic, retain) IBOutlet UITextField *user;
 @property (nonatomic, retain) IBOutlet UITextField *pass;

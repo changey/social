@@ -104,14 +104,14 @@
 }
 
 -(IBAction)signup{
-//    if(self.viewsign == nil) {
-//        Signup2ViewController *secondxib =
-//        [[Signup2ViewController alloc] initWithNibName:@"Signup2ViewController" bundle:[NSBundle mainBundle]];
-//        self.viewsign = secondxib;
-//        [secondxib release];
-//    }
-//    
-//    [self.navigationController pushViewController:self.viewsign animated:YES];
+    if(self.viewsign == nil) {
+        Signup2ViewController *secondxib =
+        [[Signup2ViewController alloc] initWithNibName:@"Signup2ViewController" bundle:[NSBundle mainBundle]];
+        self.viewsign = secondxib;
+        [secondxib release];
+    }
+    
+    [self.navigationController pushViewController:self.viewsign animated:YES];
     
     
 }
