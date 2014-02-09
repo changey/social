@@ -44,6 +44,7 @@
 //    
 //    MerchantViewController *viewmer;
 //    Signup2ViewController *viewsign;
+    
 //    
     IBOutlet UITextField *user;
     IBOutlet UITextField *pass;

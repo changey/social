@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "RootViewController.h"
 
 @implementation AppDelegate
 
@@ -15,6 +16,7 @@
 {
     [_window release];
     [_mainViewController release];
+    [_rootViewController release];
     [super dealloc];
 }
 
@@ -22,8 +24,13 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.mainViewController = [[[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil] autorelease];
-    self.navigationController = [[[UINavigationController alloc] initWithRootViewController:self.mainViewController] autorelease];
+    
+    self.rootViewController = [[[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil] autorelease];
+    self.navigationController = [[[UINavigationController alloc] initWithRootViewController:self.rootViewController] autorelease];
+    
+//    self.mainViewController = [[[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil] autorelease];
+//    self.navigationController = [[[UINavigationController alloc] initWithRootViewController:self.mainViewController] autorelease];
+    
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     return YES;

@@ -30,6 +30,9 @@
 		0AB36FDC18A8394A006961E8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB36FDB18A8394A006961E8 /* SystemConfiguration.framework */; };
 		0AB36FDE18A8398B006961E8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB36FDD18A8398B006961E8 /* MobileCoreServices.framework */; };
 		0AB36FE018A839CB006961E8 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB36FDF18A839CB006961E8 /* libz.1.2.5.dylib */; };
+		0AB36FE218A83F08006961E8 /* login_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB36FE118A83F08006961E8 /* login_bg.png */; };
+		0AB36FE418A83F7E006961E8 /* login_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB36FE318A83F7E006961E8 /* login_button.png */; };
+		0AB36FE618A83FB9006961E8 /* signup.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB36FE518A83FB9006961E8 /* signup.png */; };
 		742175C31623E21500386802 /* iconDefault@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 742175C21623E21500386802 /* iconDefault@2x.png */; };
 		742175C61623E21800386802 /* iconDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = 742175C51623E21800386802 /* iconDefault.png */; };
 		7453F2C115F439670096ADE6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7453F2C015F439670096ADE6 /* README.md */; };
@@ -109,6 +112,9 @@
 		0AB36FDB18A8394A006961E8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0AB36FDD18A8398B006961E8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		0AB36FDF18A839CB006961E8 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		0AB36FE118A83F08006961E8 /* login_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login_bg.png; path = Resources/login_bg.png; sourceTree = SOURCE_ROOT; };
+		0AB36FE318A83F7E006961E8 /* login_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = login_button.png; path = Resources/login_button.png; sourceTree = SOURCE_ROOT; };
+		0AB36FE518A83FB9006961E8 /* signup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = signup.png; path = Resources/signup.png; sourceTree = SOURCE_ROOT; };
 		742175C21623E21500386802 /* iconDefault@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iconDefault@2x.png"; path = "../iconDefault@2x.png"; sourceTree = "<group>"; };
 		742175C51623E21800386802 /* iconDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iconDefault.png; path = ../iconDefault.png; sourceTree = "<group>"; };
 		7453F2C015F439670096ADE6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
@@ -130,15 +136,15 @@
 		74E2F36B15F04E4800D21D1A /* TKContactPicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TKContactPicker-Info.plist"; sourceTree = "<group>"; };
 		74E2F36F15F04E4800D21D1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74E2F37115F04E4800D21D1A /* TKContactPicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TKContactPicker-Prefix.pch"; sourceTree = "<group>"; };
-		74E2F38A15F04F7F00D21D1A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		74E2F38B15F04F7F00D21D1A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		74E2F38A15F04F7F00D21D1A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
+		74E2F38B15F04F7F00D21D1A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
 		74E2F38E15F04F7F00D21D1A /* TKContactsMultiPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKContactsMultiPickerController.h; sourceTree = "<group>"; };
 		74E2F38F15F04F7F00D21D1A /* TKContactsMultiPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKContactsMultiPickerController.m; sourceTree = "<group>"; };
 		74E2F39315F04F7F00D21D1A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		74E2F39415F04F7F00D21D1A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		74E2F39615F04F7F00D21D1A /* TKContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKContact.h; sourceTree = "<group>"; };
 		74E2F39715F04F7F00D21D1A /* TKContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKContact.m; sourceTree = "<group>"; };
-		74E2F3A115F04F7F00D21D1A /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		74E2F3A115F04F7F00D21D1A /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = ../Xibs/MainViewController.xib; sourceTree = "<group>"; };
 		74E2F3A215F04F7F00D21D1A /* TKContactsMultiPickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TKContactsMultiPickerController.xib; sourceTree = "<group>"; };
 		74E2F3B015F04FC900D21D1A /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		74E2F3B115F04FC900D21D1A /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
@@ -287,8 +293,6 @@
 				74E2F3BD15F0513E00D21D1A /* Resources */,
 				74E2F39F15F04F7F00D21D1A /* Xibs */,
 				74E2F36A15F04E4800D21D1A /* Supporting Files */,
-				74E2F38A15F04F7F00D21D1A /* MainViewController.h */,
-				74E2F38B15F04F7F00D21D1A /* MainViewController.m */,
 			);
 			path = TKContactPicker;
 			sourceTree = "<group>";
@@ -315,6 +319,9 @@
 				0AB36F9B18A8066E006961E8 /* RootViewController.h */,
 				0AB36F9C18A8066E006961E8 /* RootViewController.m */,
 				0AB36F9D18A8066E006961E8 /* RootViewController.xib */,
+				74E2F38A15F04F7F00D21D1A /* MainViewController.h */,
+				74E2F38B15F04F7F00D21D1A /* MainViewController.m */,
+				74E2F3A115F04F7F00D21D1A /* MainViewController.xib */,
 				74E2F38E15F04F7F00D21D1A /* TKContactsMultiPickerController.h */,
 				74E2F38F15F04F7F00D21D1A /* TKContactsMultiPickerController.m */,
 				74A07E22160B2D0D0021715C /* TKGroupPickerController.h */,
@@ -350,7 +357,6 @@
 		74E2F39F15F04F7F00D21D1A /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
-				74E2F3A115F04F7F00D21D1A /* MainViewController.xib */,
 				74A07E25160B2FAB0021715C /* TKGroupPickerController.xib */,
 				74A07E26160B2FAB0021715C /* TKNoContactViewController.xib */,
 				74E2F3A215F04F7F00D21D1A /* TKContactsMultiPickerController.xib */,
@@ -361,6 +367,9 @@
 		74E2F3BD15F0513E00D21D1A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0AB36FE518A83FB9006961E8 /* signup.png */,
+				0AB36FE318A83F7E006961E8 /* login_button.png */,
+				0AB36FE118A83F08006961E8 /* login_bg.png */,
 				0AB36F9918A80543006961E8 /* iconBlank@2x.png */,
 				74E2F48B15F099FE00D21D1A /* blank.png */,
 				74E2F48C15F099FE00D21D1A /* blank@2x.png */,
@@ -436,12 +445,14 @@
 			files = (
 				74E2F36E15F04E4800D21D1A /* InfoPlist.strings in Resources */,
 				74E2F3AE15F04F7F00D21D1A /* MainViewController.xib in Resources */,
+				0AB36FE418A83F7E006961E8 /* login_button.png in Resources */,
 				74E2F3AF15F04F7F00D21D1A /* TKContactsMultiPickerController.xib in Resources */,
 				74E2F3C215F0514600D21D1A /* checkBox.png in Resources */,
 				74E2F3C315F0514600D21D1A /* checkBox@2x.png in Resources */,
 				0AB36F9F18A8066E006961E8 /* RootViewController.xib in Resources */,
 				74E2F3C415F0514600D21D1A /* uncheckBox.png in Resources */,
 				74E2F3C515F0514600D21D1A /* uncheckBox@2x.png in Resources */,
+				0AB36FE218A83F08006961E8 /* login_bg.png in Resources */,
 				74E2F48D15F099FE00D21D1A /* blank.png in Resources */,
 				74E2F48E15F099FE00D21D1A /* blank@2x.png in Resources */,
 				7453F2C115F439670096ADE6 /* README.md in Resources */,
@@ -451,6 +462,7 @@
 				742175C31623E21500386802 /* iconDefault@2x.png in Resources */,
 				0AB36F9A18A80543006961E8 /* iconBlank@2x.png in Resources */,
 				742175C61623E21800386802 /* iconDefault.png in Resources */,
+				0AB36FE618A83FB9006961E8 /* signup.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -233,18 +233,18 @@
 - (void)viewDidLoad
 {
     
-    User2 *user2=[User2 sharedUser];
-    user2.inbox=@"4";
-    
-    user2.url=@"http://54.200.250.29";
-    
-    user.text=@"";
-    pass.text=@"";
-    [self.navigationController setNavigationBarHidden:YES];
-    pass.returnKeyType = UIReturnKeyGo;
-    
-    
-    [super viewDidLoad];
+//    User2 *user2=[User2 sharedUser];
+//    user2.inbox=@"4";
+//    
+//    user2.url=@"http://54.200.250.29";
+//    
+//    user.text=@"";
+//    pass.text=@"";
+//    [self.navigationController setNavigationBarHidden:YES];
+//    pass.returnKeyType = UIReturnKeyGo;
+//    
+//    
+//    [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
