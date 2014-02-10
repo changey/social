@@ -93,7 +93,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-	return 1 + ([_groups count] > 0 ? 1 : 0);
+	return 2 + ([_groups count] > 0 ? 1 : 0);
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -101,6 +101,9 @@
     NSInteger rowNumber;
     switch (section) {
         case 0: {
+            rowNumber = 1;
+        } break;
+        case 1: {
             rowNumber = 1;
         } break;
         default: {
@@ -120,6 +123,10 @@
     switch (indexPath.section) {
         case 0: {
             cell.textLabel.text = NSLocalizedString(@"All Contacts", nil);
+            cell.detailTextLabel.text = [NSString stringWithFormat:@"%i", (int)ABAddressBookGetPersonCount([(TKPeoplePickerController*)self.navigationController addressBook])];
+        } break;
+        case 1: {
+            cell.textLabel.text = NSLocalizedString(@"杭州五四中学", nil);
             cell.detailTextLabel.text = [NSString stringWithFormat:@"%i", (int)ABAddressBookGetPersonCount([(TKPeoplePickerController*)self.navigationController addressBook])];
         } break;
         default: {

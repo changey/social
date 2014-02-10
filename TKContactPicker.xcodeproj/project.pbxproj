@@ -136,8 +136,8 @@
 		74A07E20160B2A4B0021715C /* TKNoContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKNoContactViewController.m; sourceTree = "<group>"; };
 		74A07E22160B2D0D0021715C /* TKGroupPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKGroupPickerController.h; sourceTree = "<group>"; };
 		74A07E23160B2D0D0021715C /* TKGroupPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKGroupPickerController.m; sourceTree = "<group>"; };
-		74A07E25160B2FAB0021715C /* TKGroupPickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TKGroupPickerController.xib; sourceTree = "<group>"; };
-		74A07E26160B2FAB0021715C /* TKNoContactViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TKNoContactViewController.xib; sourceTree = "<group>"; };
+		74A07E25160B2FAB0021715C /* TKGroupPickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TKGroupPickerController.xib; path = ../Xibs/TKGroupPickerController.xib; sourceTree = "<group>"; };
+		74A07E26160B2FAB0021715C /* TKNoContactViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TKNoContactViewController.xib; path = ../Xibs/TKNoContactViewController.xib; sourceTree = "<group>"; };
 		74E2F35F15F04E4800D21D1A /* TKContactPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TKContactPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E2F36315F04E4800D21D1A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		74E2F36515F04E4800D21D1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -154,7 +154,7 @@
 		74E2F39615F04F7F00D21D1A /* TKContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKContact.h; sourceTree = "<group>"; };
 		74E2F39715F04F7F00D21D1A /* TKContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKContact.m; sourceTree = "<group>"; };
 		74E2F3A115F04F7F00D21D1A /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = ../Xibs/MainViewController.xib; sourceTree = "<group>"; };
-		74E2F3A215F04F7F00D21D1A /* TKContactsMultiPickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TKContactsMultiPickerController.xib; sourceTree = "<group>"; };
+		74E2F3A215F04F7F00D21D1A /* TKContactsMultiPickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TKContactsMultiPickerController.xib; path = ../Xibs/TKContactsMultiPickerController.xib; sourceTree = "<group>"; };
 		74E2F3B015F04FC900D21D1A /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		74E2F3B115F04FC900D21D1A /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		74E2F3BE15F0514600D21D1A /* checkBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkBox.png; sourceTree = "<group>"; };
@@ -336,10 +336,13 @@
 				74E2F3A115F04F7F00D21D1A /* MainViewController.xib */,
 				74E2F38E15F04F7F00D21D1A /* TKContactsMultiPickerController.h */,
 				74E2F38F15F04F7F00D21D1A /* TKContactsMultiPickerController.m */,
+				74E2F3A215F04F7F00D21D1A /* TKContactsMultiPickerController.xib */,
 				74A07E22160B2D0D0021715C /* TKGroupPickerController.h */,
 				74A07E23160B2D0D0021715C /* TKGroupPickerController.m */,
+				74A07E25160B2FAB0021715C /* TKGroupPickerController.xib */,
 				74A07E1F160B2A4B0021715C /* TKNoContactViewController.h */,
 				74A07E20160B2A4B0021715C /* TKNoContactViewController.m */,
+				74A07E26160B2FAB0021715C /* TKNoContactViewController.xib */,
 				74A07E1B160B29FB0021715C /* TKPeoplePickerController.h */,
 				74A07E1C160B29FB0021715C /* TKPeoplePickerController.m */,
 			);
@@ -369,9 +372,6 @@
 		74E2F39F15F04F7F00D21D1A /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
-				74A07E25160B2FAB0021715C /* TKGroupPickerController.xib */,
-				74A07E26160B2FAB0021715C /* TKNoContactViewController.xib */,
-				74E2F3A215F04F7F00D21D1A /* TKContactsMultiPickerController.xib */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";

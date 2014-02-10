@@ -18,12 +18,20 @@
 @implementation MainViewController
 @synthesize scrollView = _scrollView;
 
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self setTitle:@"Contacts"];
     [self.navigationItem setRightBarButtonItem:[[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(showPeoplePicker:)] autorelease]];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+    
+    [self.navigationController setNavigationBarHidden:NO];
 }
 
 - (void)viewDidUnload

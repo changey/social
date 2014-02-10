@@ -10,7 +10,7 @@
 #import "RootViewController.h"
 #import "User2.h"
 //#import "JSON.h"
-//#import "ASIHTTPRequest.h"
+#import "ASIHTTPRequest.h"
 
 //#import "UAirship.h"
 //#import "UAPush.h"
@@ -36,6 +36,7 @@
 //@synthesize responseTextView;
 //@synthesize receivedData,responseData,user,pass,received;
 //@synthesize viewmer, merchant_id, viewsign, imageView, welcomePhotos, viewmerdis, fbGraph, responseString, viewmenu, viewimage;
+  @synthesize mainVC, user, pass;
 
 -(IBAction)image{
 //    if(self.viewimage == nil) {
@@ -179,46 +180,49 @@
 }
 
 -(IBAction)signin{
-//    NSString *user2=user.text;
-//    NSString *pass2=pass.text;
-//    
-//    User2 *user3=[User2 sharedUser];
-//    
-//    [pass resignFirstResponder];
-//    
-//    NSString *url = [NSString stringWithFormat:@"%@/startup/rnlogin2.php?user=%@&pass=%@",user3.url,user2,pass2];  // server name does not match
-//    NSURL *URL = [NSURL URLWithString:url];
-//    
-//    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:URL];
-//    [request startSynchronous];
-//    NSError *error = [request error];
-//    NSString *returnString;
-//    if (!error) {
-//        returnString = [request responseString];
-//        NSLog(@"%@",returnString);
-//    }
-//    
-//    if ([returnString isEqualToString:@"1"]){
-//        NSLog(@"%@", user2);
-//        user3.user=user2;
-//        // [[UAUser defaultUser] setAlias:@"changey"];
-//        [[UAPush shared] setAlias:user2];
-// 
-//        if(self.viewmenu == nil) {
-//            MenuViewController *secondxib =
-//            [[MenuViewController alloc] initWithNibName:@"MenuViewController" bundle:[NSBundle mainBundle]];
-//            self.viewmenu = secondxib;
-//            [secondxib release];
-//        }
-//        
-//        [self.navigationController pushViewController:self.viewmenu animated:YES];
-//    }
-//    else{
-//        UIAlertView *alertsuccess = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Username/Password invalid"
-//                                                              delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-//        [alertsuccess show];
-//        [alertsuccess release];
-//    }
+    NSString *user2=user.text;
+    NSString *pass2=pass.text;
+    
+    User2 *user3=[User2 sharedUser];
+    
+    [pass resignFirstResponder];
+    
+    NSString *url = [NSString stringWithFormat:@"%@/startup/rnlogin2.php?user=%@&pass=%@",user3.url,user2,pass2];
+    
+    NSLog(@"%@", url);
+    
+    NSURL *URL = [NSURL URLWithString:url];
+    
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:URL];
+    [request startSynchronous];
+    NSError *error = [request error];
+    NSString *returnString;
+    if (!error) {
+        returnString = [request responseString];
+        NSLog(@"%@",returnString);
+    }
+    
+    if ([returnString isEqualToString:@"1"]){
+        NSLog(@"%@", user2);
+        user3.user=user2;
+        // [[UAUser defaultUser] setAlias:@"changey"];
+        //[[UAPush shared] setAlias:user2];
+ 
+        if(self.mainVC == nil) {
+            MainViewController *secondxib =
+            [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:[NSBundle mainBundle]];
+            self.mainVC = secondxib;
+            [secondxib release];
+        }
+        
+        [self.navigationController pushViewController:self.mainVC animated:YES];
+    }
+    else{
+        UIAlertView *alertsuccess = [[UIAlertView alloc] initWithTitle:@"Error" message:@"Username/Password invalid"
+                                                              delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alertsuccess show];
+        [alertsuccess release];
+    }
     
 
 }
@@ -237,8 +241,8 @@
     
     user2.url=@"http://54.200.250.29";
 
-    user.text=@"";
-    pass.text=@"";
+    user.text=@"a";
+    pass.text=@"1";
     [self.navigationController setNavigationBarHidden:YES];
     pass.returnKeyType = UIReturnKeyGo;
     

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Signup2ViewController.h"
+#import "MainViewController.h"
 //#import "MerchantViewController.h"
 //#import "MerDiscountsViewController.h"
 //#import "FbGraph.h"
@@ -18,6 +19,7 @@
 
 //@class MerchantViewController;
 @class Signup2ViewController;
+@class MainViewController;
 //@class MerDiscountsViewController;
 //@class ASIHTTPRequest;
 //@class MenuViewController;
@@ -27,6 +29,7 @@
 
 @interface RootViewController : UIViewController <UITextFieldDelegate>{
     
+    MainViewController *mainVC;
 //    ImageViewController *viewimage;
 //    
 //    MenuViewController *viewmenu;
@@ -68,6 +71,7 @@
 //    NSString *merchant_id;
 }
 
+@property (retain, nonatomic) MainViewController *mainVC;
 //@property (nonatomic, retain) IBOutlet TPKeyboardAvoidingScrollView *scrollView;
 //
 //@property (retain, nonatomic)ImageViewController *viewimage;
