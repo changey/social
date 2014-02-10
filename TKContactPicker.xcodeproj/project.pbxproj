@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A439F4418A848E2001491E8 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A439F4318A848E2001491E8 /* bg.png */; };
 		0AB36F9A18A80543006961E8 /* iconBlank@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB36F9918A80543006961E8 /* iconBlank@2x.png */; };
 		0AB36F9E18A8066E006961E8 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB36F9C18A8066E006961E8 /* RootViewController.m */; };
 		0AB36F9F18A8066E006961E8 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AB36F9D18A8066E006961E8 /* RootViewController.xib */; };
@@ -35,7 +36,7 @@
 		0AB36FE618A83FB9006961E8 /* signup.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB36FE518A83FB9006961E8 /* signup.png */; };
 		0AB36FEA18A8418C006961E8 /* Signup2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB36FE818A8418C006961E8 /* Signup2ViewController.m */; };
 		0AB36FEB18A8418C006961E8 /* Signup2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AB36FE918A8418C006961E8 /* Signup2ViewController.xib */; };
-		0AB36FED18A847E9006961E8 /* singup_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB36FEC18A847E9006961E8 /* singup_button.png */; };
+		0AB36FED18A847E9006961E8 /* signup_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AB36FEC18A847E9006961E8 /* signup_button.png */; };
 		742175C31623E21500386802 /* iconDefault@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 742175C21623E21500386802 /* iconDefault@2x.png */; };
 		742175C61623E21800386802 /* iconDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = 742175C51623E21800386802 /* iconDefault.png */; };
 		7453F2C115F439670096ADE6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7453F2C015F439670096ADE6 /* README.md */; };
@@ -70,6 +71,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A439F4318A848E2001491E8 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = Resources/bg.png; sourceTree = SOURCE_ROOT; };
 		0AB36F9918A80543006961E8 /* iconBlank@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconBlank@2x.png"; sourceTree = SOURCE_ROOT; };
 		0AB36F9B18A8066E006961E8 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = Classes/RootViewController.h; sourceTree = SOURCE_ROOT; };
 		0AB36F9C18A8066E006961E8 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = Classes/RootViewController.m; sourceTree = SOURCE_ROOT; };
@@ -121,7 +123,7 @@
 		0AB36FE718A8418C006961E8 /* Signup2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Signup2ViewController.h; path = Classes/Signup2ViewController.h; sourceTree = SOURCE_ROOT; };
 		0AB36FE818A8418C006961E8 /* Signup2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Signup2ViewController.m; path = Classes/Signup2ViewController.m; sourceTree = SOURCE_ROOT; };
 		0AB36FE918A8418C006961E8 /* Signup2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Signup2ViewController.xib; path = Classes/Signup2ViewController.xib; sourceTree = SOURCE_ROOT; };
-		0AB36FEC18A847E9006961E8 /* singup_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = singup_button.png; path = Resources/singup_button.png; sourceTree = SOURCE_ROOT; };
+		0AB36FEC18A847E9006961E8 /* signup_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = signup_button.png; path = Resources/signup_button.png; sourceTree = SOURCE_ROOT; };
 		742175C21623E21500386802 /* iconDefault@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iconDefault@2x.png"; path = "../iconDefault@2x.png"; sourceTree = "<group>"; };
 		742175C51623E21800386802 /* iconDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iconDefault.png; path = ../iconDefault.png; sourceTree = "<group>"; };
 		7453F2C015F439670096ADE6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
@@ -377,7 +379,8 @@
 		74E2F3BD15F0513E00D21D1A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0AB36FEC18A847E9006961E8 /* singup_button.png */,
+				0A439F4318A848E2001491E8 /* bg.png */,
+				0AB36FEC18A847E9006961E8 /* signup_button.png */,
 				0AB36FE518A83FB9006961E8 /* signup.png */,
 				0AB36FE318A83F7E006961E8 /* login_button.png */,
 				0AB36FE118A83F08006961E8 /* login_bg.png */,
@@ -455,7 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74E2F36E15F04E4800D21D1A /* InfoPlist.strings in Resources */,
-				0AB36FED18A847E9006961E8 /* singup_button.png in Resources */,
+				0AB36FED18A847E9006961E8 /* signup_button.png in Resources */,
 				74E2F3AE15F04F7F00D21D1A /* MainViewController.xib in Resources */,
 				0AB36FE418A83F7E006961E8 /* login_button.png in Resources */,
 				74E2F3AF15F04F7F00D21D1A /* TKContactsMultiPickerController.xib in Resources */,
@@ -475,6 +478,7 @@
 				742175C31623E21500386802 /* iconDefault@2x.png in Resources */,
 				0AB36F9A18A80543006961E8 /* iconBlank@2x.png in Resources */,
 				742175C61623E21800386802 /* iconDefault.png in Resources */,
+				0A439F4418A848E2001491E8 /* bg.png in Resources */,
 				0AB36FE618A83FB9006961E8 /* signup.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,15 +22,15 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="signup_clean-568h.png" id="11">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg.png" id="11">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="520"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7">
-                            <rect key="frame" x="103" y="379" width="114" height="46"/>
+                            <rect key="frame" x="41" y="369" width="238" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                            <state key="normal" title="Submit" backgroundImage="signup_button.png">
+                            <state key="normal" backgroundImage="signup_button.png">
                                 <color key="titleColor" white="0.82610059309999995" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" red="0.3356744968" green="0.3330438356" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
@@ -92,8 +92,8 @@
         </imageView>
     </objects>
     <resources>
+        <image name="bg.png" width="321" height="505"/>
         <image name="login-text.png" width="276" height="90"/>
-        <image name="signup_button.png" width="750" height="253"/>
-        <image name="signup_clean-568h.png" width="640" height="1136"/>
+        <image name="signup_button.png" width="307" height="41"/>
     </resources>
 </document>

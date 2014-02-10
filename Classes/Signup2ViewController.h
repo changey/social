@@ -7,15 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MainViewController.h"
 //#import "MenuViewController.h"
 
 @class TPKeyboardAvoidingScrollView;
+@class MainViewController;
 //@class MenuViewController;
 
 
 @interface Signup2ViewController : UIViewController{
     
     //MenuViewController *viewmenu;
+    MainViewController *mainVC;
     
     IBOutlet UITextField *user;
     IBOutlet UITextField *pass;
@@ -24,6 +27,8 @@
 }
 
 //@property (nonatomic, retain) MenuViewController *viewmenu;
+
+@property (nonatomic, retain) MainViewController *mainVC;
 
 @property (nonatomic, retain) IBOutlet TPKeyboardAvoidingScrollView *scrollView;
 

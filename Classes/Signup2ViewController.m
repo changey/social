@@ -21,7 +21,7 @@
 
 @implementation Signup2ViewController
 
-@synthesize user, pass, email, passcon;
+@synthesize user, pass, email, passcon, mainVC;
 
 -(IBAction)connect
 {
@@ -31,6 +31,7 @@
     User2 *user3=[User2 sharedUser];
     
     NSString *urlString = [NSString stringWithFormat:@"%@/startup/post_signup.php?user=%@&pass=%@", user3.url, user2,pass2];
+    NSLog(@"%@", urlString);
     
     NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString: urlString]];
     NSString *returnString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
@@ -49,21 +50,21 @@
         [alertsuccess show];
         [alertsuccess release];
     }
-//    else if([returnString isEqualToString:@"1"]){
-//        user3.user=user2;
-//        // [[UAUser defaultUser] setAlias:@"changey"];
-//        [[UAPush shared] setAlias:user2];
-//        
-//        if(self.viewmenu == nil) {
-//            MenuViewController *secondxib =
-//            [[MenuViewController alloc] initWithNibName:@"MenuViewController" bundle:[NSBundle mainBundle]];
-//            self.viewmenu = secondxib;
-//            [secondxib release];
-//        }
-//        
-//        [self.navigationController pushViewController:self.viewmenu animated:YES];
-//        
-//    }
+    else if([returnString isEqualToString:@"1"]){
+        user3.user=user2;
+        // [[UAUser defaultUser] setAlias:@"changey"];
+        //[[UAPush shared] setAlias:user2];
+        
+        if(self.mainVC == nil) {
+            MainViewController *secondxib =
+            [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:[NSBundle mainBundle]];
+            self.mainVC = secondxib;
+            [secondxib release];
+        }
+        
+        [self.navigationController pushViewController:self.mainVC animated:YES];
+        
+    }
     else{
         UIAlertView *alertsuccess = [[UIAlertView alloc] initWithTitle:@"Error" message:@"That username already exists"
                                                               delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
